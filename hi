@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main()
+{
+	int a,b;
+	int superman(int a);
+	printf("input the number\n");
+	scanf("%d",&a);
+	b=superman(a);
+}
+
+
+int superman(int a )
+{
+	int i,b,j,k,x,y;
+	for(i=1;i<a;i++)
+	{
+		b=a-i;
+		for(j=2;j<b;j++)
+		{
+			if(b%j!=0)
+			{
+				x=b;
+				y=i;
+			} 
+		} 
+	}
+	printf("the number is \n%d\n%d",x,y);
+
+}
